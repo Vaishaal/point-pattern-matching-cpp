@@ -2,18 +2,18 @@
 #include <math.h>
 #define _USE_MATH_DEFINES
 using Eigen::MatrixXd;
-MatrixXd* generateTranslator(long x, long y)
+Matrix3d* generateTranslator(long x, long y)
 {
-  MatrixXd* m = new MatrixXd(3,3);
+  Matrix3d* m = new Matrix3d();
   *m << 1, 0, x,
        0, 1,  y,
        0, 0, 1;
   return m;
 }
 
-MatrixXd* generateRotator(double theta)
+Matrix3d* generateRotator(double theta)
 {
-  MatrixXd* m = new MatrixXd(3,3);
+  Matrix3d* m = new Matrix3d();
   *m << cos(theta), -sin(theta), 0,
         sin(theta), cos(theta),  0,
         0,          0,           1;

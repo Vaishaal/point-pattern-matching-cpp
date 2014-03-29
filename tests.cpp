@@ -5,16 +5,16 @@
 
 using namespace Eigen;
 TEST_CASE( "Translations", "[affine_transformations]" ) {
-    MatrixXd* m = generateTranslator(2,3);
+    Matrix3d* m = generateTranslator(2,3);
     Vector3d v(5,7,1);
     Vector3d v_expect(7,10,1);
     Vector3d v_actual = (*m)*v;
     REQUIRE(v_actual == v_expect);
 }
 TEST_CASE( "Rotations", "[affine_transformations]" ) {
-    MatrixXd* m1 = generateRotator(degreeToRadian(360));
-    MatrixXd* m2 = generateRotator(degreeToRadian(45));
-    MatrixXd* m3 = generateRotator(degreeToRadian(90));
+    Matrix3d* m1 = generateRotator(degreeToRadian(360));
+    Matrix3d* m2 = generateRotator(degreeToRadian(45));
+    Matrix3d* m3 = generateRotator(degreeToRadian(90));
     Vector3d v(1,0,1);
     Vector3d v1_expect(1,0,1);
     Vector3d v2_expect(sqrt(2)/2,sqrt(2)/2,1);
