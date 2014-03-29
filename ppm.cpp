@@ -42,3 +42,32 @@ bool operator==(const Eigen::Vector3d &v1, const Eigen::Vector3d &v2)
            areSame(v1(2), v2(2));
 }
 
+bool localMatch(VectorList &a, VectorList &b, double p) 
+{
+    return false;
+}
+
+bool globalMatch(VectorList &l1, VectorList &l2, double p)
+{
+    return false;
+}
+
+bool computeNearestNeighbors(VectorList &points, VectorListList &neighbors)
+{
+    return false;
+}
+
+double computeAverageDistance(VectorList &points) 
+{
+    return -1;
+}
+
+int findBin(double avgDistance, Vector3d &point, VectorListList &bins)
+{
+    return -1;
+}
+
+bool putInBins(double avgDistance, Vector3d &point, VectorListList &bins)
+{
+    return false;
+}
