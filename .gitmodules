@@ -1,0 +1,6 @@
+[submodule "eigen"]
+	path = eigen
+	url = git@github.com:cryos/eigen.git
+[submodule "tut-framework"]
+	path = tut-framework
+	url = https://github.com/mrzechonek/tut-framework.git
