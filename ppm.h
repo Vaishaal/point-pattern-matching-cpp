@@ -5,8 +5,8 @@
 #define K 5
 using namespace Eigen;
 /*Useful typedefs*/
-typedef std::vector<Matrix3d*> MatrixList;
-typedef std::vector<Vector3d*> VectorList;
+typedef std::vector<Matrix3d> MatrixList;
+typedef std::vector<Vector3d> VectorList;
 typedef std::vector<VectorList*> VectorListList;
 
 /*
@@ -28,6 +28,16 @@ bool operator==(const Eigen::Vector3d &v1, const Eigen::Vector3d &v2);
 double degreeToRadian(double degree);
 double radianToDegree(double radian);
 bool areSame(double a, double b);
+
+/*
+ * This is the main body of the iyengar algorithm
+ */
+bool mainLoop(VectorList &points, double lambda, double p);
+
+/*
+ * Below are subroutines used by the mainLoop above
+ */
+
 bool localMatch(VectorList &a, VectorList &b, double p);
 bool globalMatch(VectorList &l1, VectorList &l2, double p);
 
@@ -53,6 +63,10 @@ bool computeNearestNeighbors(VectorList &points, VectorListList &neighbors);
  */
 double computeAverageDistance(VectorList &points);
 
+double computeMax(VectorList &points);
+
+double computeMin(VectorList &points);
+
 /*
  * These functions are used in part 1b of the iyengar algorithm
  * for precomputation of the location of query points so a quick lookup
@@ -62,3 +76,10 @@ double computeAverageDistance(VectorList &points);
 int findBin(double avgDistance, Vector3d &point, VectorListList &bins);
 bool putInBins(double avgDistance, Vector3d &point, VectorListList &bins);
 
+
+/*
+ * Methods for testing
+ */
+
+bool generatePoints(int numPoints, int xmin, int xmax,  int ymin, int ymax,
+                     VectorList &points);

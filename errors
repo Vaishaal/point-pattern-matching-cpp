@@ -1,0 +1,250 @@
+In file included from eigen/Eigen/Core:261:0,
+                 from eigen/Eigen/Dense:1,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+eigen/Eigen/src/Core/util/Memory.h: In function ‘Index Eigen::internal::first_aligned(const Scalar*, Index)’:
+eigen/Eigen/src/Core/util/Memory.h:462:48: warning: typedef ‘Packet’ locally defined but not used [-Wunused-local-typedefs]
+   typedef typename packet_traits<Scalar>::type Packet;
+                                                ^
+In file included from eigen/Eigen/Core:337:0,
+                 from eigen/Eigen/Dense:1,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h: In static member function ‘static void Eigen::internal::selfadjoint_matrix_vector_product<Scalar, Index, StorageOrder, UpLo, ConjugateLhs, ConjugateRhs, Version>::run(Index, const Scalar*, Index, const Scalar*, Index, Scalar*, Scalar)’:
+eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h:51:44: warning: typedef ‘RealScalar’ locally defined but not used [-Wunused-local-typedefs]
+   typedef typename NumTraits<Scalar>::Real RealScalar;
+                                            ^
+In file included from eigen/Eigen/QR:28:0,
+                 from eigen/Eigen/Dense:4,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+eigen/Eigen/src/QR/HouseholderQR.h: In function ‘void Eigen::internal::householder_qr_inplace_blocked(MatrixQR&, HCoeffs&, typename MatrixQR::Index, typename MatrixQR::Scalar*)’:
+eigen/Eigen/src/QR/HouseholderQR.h:248:41: warning: typedef ‘RealScalar’ locally defined but not used [-Wunused-local-typedefs]
+   typedef typename MatrixQR::RealScalar RealScalar;
+                                         ^
+In file included from eigen/Eigen/Core:283:0,
+                 from eigen/Eigen/Dense:1,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+eigen/Eigen/src/Core/DenseBase.h: In instantiation of ‘class Eigen::DenseBase<Eigen::Matrix<float, 4, 1> >’:
+eigen/Eigen/src/Core/MatrixBase.h:61:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<float, 4, 1> >’
+eigen/Eigen/src/Core/PlainObjectBase.h:85:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<float, 4, 1> >’
+eigen/Eigen/src/Core/Matrix.h:140:7:   required from ‘class Eigen::Matrix<float, 4, 1>’
+eigen/Eigen/src/Geometry/Quaternion.h:293:16:   required from ‘class Eigen::Quaternion<float>’
+eigen/Eigen/src/Geometry/arch/Geometry_SSE.h:35:3:   required from here
+eigen/Eigen/src/Core/DenseBase.h:172:59: warning: enumeral mismatch in conditional expression: ‘Eigen::internal::size_at_compile_time<4, 1>::<anonymous enum>’ vs ‘Eigen::internal::traits<Eigen::Matrix<float, 4, 1> >::<anonymous enum>’ [-Wenum-compare]
+       InnerSizeAtCompileTime = int(IsVectorAtCompileTime) ? SizeAtCompileTime
+                                                           ^
+eigen/Eigen/src/Core/DenseBase.h: In instantiation of ‘class Eigen::DenseBase<Eigen::Matrix<double, 4, 1> >’:
+eigen/Eigen/src/Core/MatrixBase.h:61:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<double, 4, 1> >’
+eigen/Eigen/src/Core/PlainObjectBase.h:85:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, 4, 1> >’
+eigen/Eigen/src/Core/Matrix.h:140:7:   required from ‘class Eigen::Matrix<double, 4, 1>’
+eigen/Eigen/src/Geometry/Quaternion.h:293:16:   required from ‘class Eigen::Quaternion<double>’
+eigen/Eigen/src/Geometry/arch/Geometry_SSE.h:76:3:   required from here
+eigen/Eigen/src/Core/DenseBase.h:172:59: warning: enumeral mismatch in conditional expression: ‘Eigen::internal::size_at_compile_time<4, 1>::<anonymous enum>’ vs ‘Eigen::internal::traits<Eigen::Matrix<double, 4, 1> >::<anonymous enum>’ [-Wenum-compare]
+In file included from eigen/Eigen/Eigenvalues:30:0,
+                 from eigen/Eigen/Dense:7,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+eigen/Eigen/src/Eigenvalues/Tridiagonalization.h: In function ‘void Eigen::internal::tridiagonalization_inplace(MatrixType&, DiagonalType&, SubDiagonalType&, bool)’:
+eigen/Eigen/src/Eigenvalues/Tridiagonalization.h:441:38: warning: typedef ‘Index’ locally defined but not used [-Wunused-local-typedefs]
+   typedef typename MatrixType::Index Index;
+                                      ^
+In file included from eigen/Eigen/Eigenvalues:36:0,
+                 from eigen/Eigen/Dense:7,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+eigen/Eigen/src/Eigenvalues/ComplexSchur.h: In static member function ‘static void Eigen::internal::complex_schur_reduce_to_hessenberg<MatrixType, false>::run(Eigen::ComplexSchur<MatrixType>&, const MatrixType&, bool)’:
+eigen/Eigen/src/Eigenvalues/ComplexSchur.h:326:66: warning: typedef ‘ComplexMatrixType’ locally defined but not used [-Wunused-local-typedefs]
+     typedef typename ComplexSchur<MatrixType>::ComplexMatrixType ComplexMatrixType;
+                                                                  ^
+In file included from eigen/Eigen/Core:283:0,
+                 from eigen/Eigen/Dense:1,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+eigen/Eigen/src/Core/DenseBase.h: In instantiation of ‘class Eigen::DenseBase<Eigen::Matrix<double, 3, 1> >’:
+eigen/Eigen/src/Core/MatrixBase.h:61:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<double, 3, 1> >’
+eigen/Eigen/src/Core/PlainObjectBase.h:85:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, 3, 1> >’
+eigen/Eigen/src/Core/Matrix.h:140:7:   required from ‘class Eigen::Matrix<double, 3, 1>’
+eigen/Eigen/src/Core/DenseBase.h:159:79:   required from ‘class Eigen::DenseBase<Eigen::Matrix<double, 3, 3> >’
+eigen/Eigen/src/Core/MatrixBase.h:61:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<double, 3, 3> >’
+eigen/Eigen/src/Core/PlainObjectBase.h:85:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, 3, 3> >’
+eigen/Eigen/src/Core/Matrix.h:140:7:   required from ‘class Eigen::Matrix<double, 3, 3>’
+ppm.cpp:13:30:   required from here
+eigen/Eigen/src/Core/DenseBase.h:172:59: warning: enumeral mismatch in conditional expression: ‘Eigen::internal::size_at_compile_time<3, 1>::<anonymous enum>’ vs ‘Eigen::internal::traits<Eigen::Matrix<double, 3, 1> >::<anonymous enum>’ [-Wenum-compare]
+       InnerSizeAtCompileTime = int(IsVectorAtCompileTime) ? SizeAtCompileTime
+                                                           ^
+eigen/Eigen/src/Core/DenseBase.h: In instantiation of ‘class Eigen::DenseBase<Eigen::Matrix<double, 3, 3> >’:
+eigen/Eigen/src/Core/MatrixBase.h:61:34:   required from ‘class Eigen::MatrixBase<Eigen::Matrix<double, 3, 3> >’
+eigen/Eigen/src/Core/PlainObjectBase.h:85:7:   required from ‘class Eigen::PlainObjectBase<Eigen::Matrix<double, 3, 3> >’
+eigen/Eigen/src/Core/Matrix.h:140:7:   required from ‘class Eigen::Matrix<double, 3, 3>’
+ppm.cpp:13:30:   required from here
+eigen/Eigen/src/Core/DenseBase.h:172:59: warning: enumeral mismatch in conditional expression: ‘Eigen::internal::size_at_compile_time<3, 3>::<anonymous enum>’ vs ‘Eigen::internal::traits<Eigen::Matrix<double, 3, 3> >::<anonymous enum>’ [-Wenum-compare]
+ppm.cpp: In function ‘double computeAverageDistance(VectorList&)’:
+ppm.cpp:75:35: error: no match for ‘operator-’ (operand types are ‘Eigen::Matrix<double, 3, 1>’ and ‘std::vector<Eigen::Matrix<double, 3, 1> >::iterator {aka __gnu_cxx::__normal_iterator<Eigen::Matrix<double, 3, 1>*, std::vector<Eigen::Matrix<double, 3, 1> > >}’)
+                 std::cout << (*p1 - p2) << std::endl;
+                                   ^
+ppm.cpp:75:35: note: candidates are:
+In file included from eigen/Eigen/src/Core/MatrixBase.h:149:0,
+                 from eigen/Eigen/Core:284,
+                 from eigen/Eigen/Dense:1,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+eigen/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h:59:1: note: const Eigen::CwiseUnaryOp<Eigen::internal::scalar_opposite_op<typename Eigen::internal::traits<T>::Scalar>, const Derived> Eigen::MatrixBase<Derived>::operator-() const [with Derived = Eigen::Matrix<double, 3, 1>; typename Eigen::internal::traits<T>::Scalar = double]
+ operator-() const { return derived(); }
+ ^
+eigen/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h:59:1: note:   candidate expects 0 arguments, 1 provided
+In file included from eigen/Eigen/Core:35:0,
+                 from eigen/Eigen/Dense:1,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+eigen/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h:34:28: note: template<class OtherDerived> const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<typename Eigen::internal::traits<T>::Scalar>, const Derived, const OtherDerived> Eigen::MatrixBase<Derived>::operator-(const Eigen::MatrixBase<OtherDerived>&) const [with OtherDerived = OtherDerived; Derived = Eigen::Matrix<double, 3, 1>]
+ EIGEN_MAKE_CWISE_BINARY_OP(operator-,internal::scalar_difference_op)
+                            ^
+eigen/Eigen/src/Core/util/Macros.h:409:4: note: in definition of macro ‘EIGEN_MAKE_CWISE_BINARY_OP’
+   (METHOD)(const EIGEN_CURRENT_STORAGE_BASE_CLASS<OtherDerived> &other) const \
+    ^
+eigen/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h:34:28: note:   template argument deduction/substitution failed:
+ EIGEN_MAKE_CWISE_BINARY_OP(operator-,internal::scalar_difference_op)
+                            ^
+eigen/Eigen/src/Core/util/Macros.h:409:4: note: in definition of macro ‘EIGEN_MAKE_CWISE_BINARY_OP’
+   (METHOD)(const EIGEN_CURRENT_STORAGE_BASE_CLASS<OtherDerived> &other) const \
+    ^
+ppm.cpp:75:37: note:   ‘std::vector<Eigen::Matrix<double, 3, 1> >::iterator {aka __gnu_cxx::__normal_iterator<Eigen::Matrix<double, 3, 1>*, std::vector<Eigen::Matrix<double, 3, 1> > >}’ is not derived from ‘const Eigen::MatrixBase<Derived>’
+                 std::cout << (*p1 - p2) << std::endl;
+                                     ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ppm.h:1,
+                 from ppm.cpp:1:
+/usr/include/c++/4.8/bits/stl_iterator.h:896:5: note: template<class _Iterator, class _Container> typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:896:5: note:   template argument deduction/substitution failed:
+ppm.cpp:75:37: note:   ‘Eigen::Matrix<double, 3, 1>’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+                 std::cout << (*p1 - p2) << std::endl;
+                                     ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ppm.h:1,
+                 from ppm.cpp:1:
+/usr/include/c++/4.8/bits/stl_iterator.h:889:5: note: template<class _IteratorL, class _IteratorR, class _Container> typename __gnu_cxx::__normal_iterator<_IteratorL, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator-(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:889:5: note:   template argument deduction/substitution failed:
+ppm.cpp:75:37: note:   ‘Eigen::Matrix<double, 3, 1>’ is not derived from ‘const __gnu_cxx::__normal_iterator<_IteratorL, _Container>’
+                 std::cout << (*p1 - p2) << std::endl;
+                                     ^
+In file included from /usr/include/c++/4.8/vector:65:0,
+                 from ppm.h:3,
+                 from ppm.cpp:1:
+/usr/include/c++/4.8/bits/stl_bvector.h:208:3: note: std::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)
+   operator-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+   ^
+/usr/include/c++/4.8/bits/stl_bvector.h:208:3: note:   no known conversion for argument 1 from ‘Eigen::Matrix<double, 3, 1>’ to ‘const std::_Bit_iterator_base&’
+In file included from eigen/Eigen/Core:37:0,
+                 from eigen/Eigen/Dense:1,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+/usr/include/c++/4.8/complex:449:5: note: template<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&)
+     operator-(const complex<_Tp>& __x)
+     ^
+/usr/include/c++/4.8/complex:449:5: note:   template argument deduction/substitution failed:
+ppm.cpp:75:37: note:   ‘Eigen::Matrix<double, 3, 1>’ is not derived from ‘const std::complex<_Tp>’
+                 std::cout << (*p1 - p2) << std::endl;
+                                     ^
+In file included from eigen/Eigen/Core:37:0,
+                 from eigen/Eigen/Dense:1,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+/usr/include/c++/4.8/complex:372:5: note: template<class _Tp> std::complex<_Tp> std::operator-(const _Tp&, const std::complex<_Tp>&)
+     operator-(const _Tp& __x, const complex<_Tp>& __y)
+     ^
+/usr/include/c++/4.8/complex:372:5: note:   template argument deduction/substitution failed:
+ppm.cpp:75:37: note:   ‘std::vector<Eigen::Matrix<double, 3, 1> >::iterator {aka __gnu_cxx::__normal_iterator<Eigen::Matrix<double, 3, 1>*, std::vector<Eigen::Matrix<double, 3, 1> > >}’ is not derived from ‘const std::complex<_Tp>’
+                 std::cout << (*p1 - p2) << std::endl;
+                                     ^
+In file included from eigen/Eigen/Core:37:0,
+                 from eigen/Eigen/Dense:1,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+/usr/include/c++/4.8/complex:363:5: note: template<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const _Tp&)
+     operator-(const complex<_Tp>& __x, const _Tp& __y)
+     ^
+/usr/include/c++/4.8/complex:363:5: note:   template argument deduction/substitution failed:
+ppm.cpp:75:37: note:   ‘Eigen::Matrix<double, 3, 1>’ is not derived from ‘const std::complex<_Tp>’
+                 std::cout << (*p1 - p2) << std::endl;
+                                     ^
+In file included from eigen/Eigen/Core:37:0,
+                 from eigen/Eigen/Dense:1,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+/usr/include/c++/4.8/complex:354:5: note: template<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     operator-(const complex<_Tp>& __x, const complex<_Tp>& __y)
+     ^
+/usr/include/c++/4.8/complex:354:5: note:   template argument deduction/substitution failed:
+ppm.cpp:75:37: note:   ‘Eigen::Matrix<double, 3, 1>’ is not derived from ‘const std::complex<_Tp>’
+                 std::cout << (*p1 - p2) << std::endl;
+                                     ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ppm.h:1,
+                 from ppm.cpp:1:
+/usr/include/c++/4.8/bits/stl_iterator.h:384:5: note: template<class _IteratorL, class _IteratorR> typename std::reverse_iterator<_Iterator>::difference_type std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator-(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:384:5: note:   template argument deduction/substitution failed:
+ppm.cpp:75:37: note:   ‘Eigen::Matrix<double, 3, 1>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+                 std::cout << (*p1 - p2) << std::endl;
+                                     ^
+In file included from /usr/include/c++/4.8/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.8/bits/char_traits.h:39,
+                 from /usr/include/c++/4.8/ios:40,
+                 from /usr/include/c++/4.8/ostream:38,
+                 from /usr/include/c++/4.8/iostream:39,
+                 from ppm.h:1,
+                 from ppm.cpp:1:
+/usr/include/c++/4.8/bits/stl_iterator.h:327:5: note: template<class _Iterator> typename std::reverse_iterator<_Iterator>::difference_type std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator-(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.8/bits/stl_iterator.h:327:5: note:   template argument deduction/substitution failed:
+ppm.cpp:75:37: note:   ‘Eigen::Matrix<double, 3, 1>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+                 std::cout << (*p1 - p2) << std::endl;
+                                     ^
+In file included from eigen/Eigen/Core:283:0,
+                 from eigen/Eigen/Dense:1,
+                 from ppm.h:2,
+                 from ppm.cpp:1:
+eigen/Eigen/src/Core/DenseBase.h: In instantiation of ‘class Eigen::DenseBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> > >’:
+eigen/Eigen/src/Core/MatrixBase.h:61:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> > >’
+eigen/Eigen/src/Core/CwiseBinaryOp.h:176:7:   required from ‘class Eigen::CwiseBinaryOpImpl<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1>, Eigen::Dense>’
+eigen/Eigen/src/Core/CwiseBinaryOp.h:119:7:   required from ‘class Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> >’
+ppm.cpp:76:34:   required from here
+eigen/Eigen/src/Core/DenseBase.h:172:59: warning: enumeral mismatch in conditional expression: ‘Eigen::internal::size_at_compile_time<3, 1>::<anonymous enum>’ vs ‘Eigen::internal::traits<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> > >::<anonymous enum>’ [-Wenum-compare]
+       InnerSizeAtCompileTime = int(IsVectorAtCompileTime) ? SizeAtCompileTime
+                                                           ^
+eigen/Eigen/src/Core/DenseBase.h: In instantiation of ‘class Eigen::DenseBase<Eigen::CwiseBinaryOp<std::not_equal_to<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> > >’:
+eigen/Eigen/src/Core/MatrixBase.h:61:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseBinaryOp<std::not_equal_to<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> > >’
+eigen/Eigen/src/Core/CwiseBinaryOp.h:176:7:   required from ‘class Eigen::CwiseBinaryOpImpl<std::not_equal_to<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1>, Eigen::Dense>’
+eigen/Eigen/src/Core/CwiseBinaryOp.h:119:7:   required from ‘class Eigen::CwiseBinaryOp<std::not_equal_to<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> >’
+eigen/Eigen/src/Core/MatrixBase.h:312:33:   required from ‘bool Eigen::MatrixBase<Derived>::operator!=(const Eigen::MatrixBase<OtherDerived>&) const [with OtherDerived = Eigen::Matrix<double, 3, 1>; Derived = Eigen::Matrix<double, 3, 1>]’
+ppm.cpp:73:25:   required from here
+eigen/Eigen/src/Core/DenseBase.h:172:59: warning: enumeral mismatch in conditional expression: ‘Eigen::internal::size_at_compile_time<3, 1>::<anonymous enum>’ vs ‘Eigen::internal::traits<Eigen::CwiseBinaryOp<std::not_equal_to<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> > >::<anonymous enum>’ [-Wenum-compare]
+eigen/Eigen/src/Core/DenseBase.h: In instantiation of ‘class Eigen::DenseBase<Eigen::CwiseUnaryOp<Eigen::internal::scalar_abs2_op<double>, const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> > > >’:
+eigen/Eigen/src/Core/MatrixBase.h:61:34:   required from ‘class Eigen::MatrixBase<Eigen::CwiseUnaryOp<Eigen::internal::scalar_abs2_op<double>, const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> > > >’
+eigen/Eigen/src/Core/CwiseUnaryOp.h:105:7:   required from ‘class Eigen::CwiseUnaryOpImpl<Eigen::internal::scalar_abs2_op<double>, const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> >, Eigen::Dense>’
+eigen/Eigen/src/Core/CwiseUnaryOp.h:72:7:   required from ‘class Eigen::CwiseUnaryOp<Eigen::internal::scalar_abs2_op<double>, const Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> > >’
+eigen/Eigen/src/Core/Dot.h:128:50:   required from ‘typename Eigen::NumTraits<typename Eigen::internal::traits<T>::Scalar>::Real Eigen::MatrixBase<Derived>::squaredNorm() const [with Derived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> >; typename Eigen::NumTraits<typename Eigen::internal::traits<T>::Scalar>::Real = double]’
+eigen/Eigen/src/Core/Dot.h:140:37:   required from ‘typename Eigen::NumTraits<typename Eigen::internal::traits<T>::Scalar>::Real Eigen::MatrixBase<Derived>::norm() const [with Derived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> >; typename Eigen::NumTraits<typename Eigen::internal::traits<T>::Scalar>::Real = double]’
+ppm.cpp:76:43:   required from here
+eigen/Eigen/src/Core/DenseBase.h:172:59: warning: enumeral mismatch in conditional expression: ‘Eigen::internal::size_at_compile_time<3, 1>::<anonymous enum>’ vs ‘Eigen::internal::traits<Eigen::CwiseBinaryOp<Eigen::internal::scalar_difference_op<double>, const Eigen::Matrix<double, 3, 1>, const Eigen::Matrix<double, 3, 1> > >::<anonymous enum>’ [-Wenum-compare]
+make: *** [ppm.o] Error 1

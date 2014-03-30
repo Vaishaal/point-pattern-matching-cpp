@@ -11,6 +11,7 @@ TEST_CASE( "Translations", "[affine_transformations]" ) {
     Vector3d v_actual = (*m)*v;
     REQUIRE(v_actual == v_expect);
 }
+
 TEST_CASE( "Rotations", "[affine_transformations]" ) {
     Matrix3d* m1 = generateRotator(degreeToRadian(360));
     Matrix3d* m2 = generateRotator(degreeToRadian(45));
@@ -26,3 +27,5 @@ TEST_CASE( "Rotations", "[affine_transformations]" ) {
     REQUIRE(v2_actual == v2_expect);
     REQUIRE(v3_actual == v3_expect);
 }
+
+
